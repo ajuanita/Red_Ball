@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js">
+
+</script>
+
+
+        <script type="text/Javascript">
+        
+function moveleft() {
+   redball.left= redball.left -10;
+   
+}
+function moveright() {
+    redball.left= redball.left +10;
+}
+
+function movedown(){
+   redball.top= redball.top -10;
+    
+}
+function moveup() {
+   redball.top= redball.top +10;
+}
+function moveupright() {
+    redball.left= redball.left +10;
+    redball.top= redball.top -10;
+}
+function movedownright() {
+    redball.left= redball.left +10;
+    redball.top= redball.top +10;
+}
+function moveupleft() {
+    redball.left= redball.left -10;
+    redball.top= redball.top -10;
+}
+function movedownleft(){
+    redball.left= redball.left -10;
+    redball.top= redball.top +10;
+}
+    function moveup(){
+        var ball=$("#redball");
+        ball.animate({"top":"-=10"},1000, "linear");
+    }
+
+</script>
+
+ </head>
+ <button onclick="moveleft()">Move Left
+ </button>  
+    <button onclick="moveright()">Move Right</button>
+    <button onclick="movedown()">Move Up</button>
+    <button onclick="moveup()">Move Down</button>
+    <button onclick="moveupright()">Right Up</button>
+    <button onclick="movedownright()">Right Down</button>
+    <button onclick="moveupleft()">Left Up</button>
+    <button onclick="movedownleft()">Left Down</button>
+    
+    <body>
+<img id="redball" src="http://storage.googleapis.com/ics-redball/redball.jpg" />
+    </body>
+</html>
